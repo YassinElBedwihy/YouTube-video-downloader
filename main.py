@@ -73,17 +73,15 @@ if(format.lower() == "mp4"):
             curregaud = yt_obj[i]
     curregvid = yt_obj[qualitynums[(qualities.index(quality))]]
             
-    if(curregvid and curregaud): #download the aud and vid, then combine them using moviepy
-        outvid = curregvid.download(filename = curregvid.title + 'video')
-        unedited_aud = curregaud.download(filename = curregaud.title + 'audio')
-        
-        base, ext = os.path.splitext(unedited_aud)
-        outaud = base + '.mp3'
-        os.rename(unedited_aud, outaud)
-        outaud_path = os.path.abspath(outaud)
-        outvid_path = os.path.abspath(outvid)
-    else:
-        raise ValueError('An error has occurred, try reaching out to me on github or choosing a different video to see if the problem is with the script or the video.')
+    #download the aud and vid, then combine them using moviepy
+    outvid = curregvid.download(filename = curregvid.title + 'video')
+    unedited_aud = curregaud.download(filename = curregaud.title + 'audio')
+    
+    base, ext = os.path.splitext(unedited_aud)
+    outaud = base + '.mp3'
+    os.rename(unedited_aud, outaud)
+    outaud_path = os.path.abspath(outaud)   
+    outvid_path = os.path.abspath(outvid)
 
     combine_vid_with_aud(outvid_path, outaud_path, curregvid.title) #make the final combined video.
 
