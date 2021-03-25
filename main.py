@@ -64,6 +64,7 @@ if(format.lower() == "mp4"):
     quality = input(string).strip()
 
     print("Downloading...")
+    print("Note: This script downloads videos/audios to your current directory by default, you can quit the downloading process by pressing CTRL + C and change the directory before running the script.")
 
     for i, stream in enumerate(yt_obj): #iterate over all the available streams and choose only the audio
         audpattern = r'<Stream: itag="\d+" mime_type="audio\/mp4" abr="\d+kbps" acodec="(?:.+)" progressive="False" type="audio">'
