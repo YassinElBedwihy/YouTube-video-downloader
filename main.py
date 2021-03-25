@@ -93,14 +93,11 @@ if(format.lower() == "mp4"):
 
 elif(format.lower() == "mp3"):
     print("Downloading...")
-    try:
-        yt_obj = YouTube(link).streams.filter(only_audio=True).first() 
-        output = yt_obj.download() #download the audio
-        name, extension = os.path.splitext(output)
-        final_name = name + '.mp3' 
+    yt_obj = YouTube(link).streams.filter(only_audio=True).first() 
+    output = yt_obj.download() #download the audio
+    name, extension = os.path.splitext(output)
+    final_name = name + '.mp3' 
 
-        os.rename(output, final_name) #turn it into an mp3 file, since pytube downloads audio files as mp4.
-        
-        print('Successfully downloaded.')
-    except:
-        print('error')
+    os.rename(output, final_name) #turn it into an mp3 file, since pytube downloads audio files as mp4.
+    
+    print('Successfully downloaded.')
