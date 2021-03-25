@@ -1,5 +1,5 @@
 # YouTube-video-downloader
-a simple cmd program which allows you to download youtube videos via the pytube library
+a simple cmd program which allows you to download youtube videos via the pytube library. <br />
 the main.py file has some comments if you want to know how this script was made, the code isn't that readable since it wasn't really made with the intent of teaching it to someone.
 
 ## Installation for noobs
