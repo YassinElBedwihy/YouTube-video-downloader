@@ -4,7 +4,7 @@ the main.py file has some comments if you want to know how this script was made,
 
 ## Installation for noobs
 `git clone https://github.com/n0rbed/EP1C-PYTHON-YT-V1D-D0WnLO0Ader.git` <br />
-`cd YouTube-video-downloader` <br />
+`cd EP1C-PYTHON-YT-V1D-D0WnLO0Ader` <br />
 `pip install -r requirements.txt` <br />
 
 Done!
