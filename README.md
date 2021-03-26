@@ -11,7 +11,7 @@ Done!
 
 ## Running the script also for noobs
 
-`cd YouTube-video-downloader` <br />
+`cd EP1C-PYTHON-YT-V1D-D0WnLO0Ader` <br />
 `python main.py` <br />
 
 Feel free to message me on discord (n0rbed#8095) for any issues regarding usage. You're Welcome.
